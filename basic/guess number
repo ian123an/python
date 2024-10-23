@@ -1,0 +1,21 @@
+answer = 10
+num = None
+count = 0
+limit = 3
+out_of_limit = False
+
+while num != answer and not(out_of_limit):
+    count += 1
+    if count <= limit:
+        num = int(input("請輸入數字: "))
+        if num > answer:
+            print("小一點")
+        elif num < answer:
+            print("大一點")
+    else:
+        out_of_limit = True
+
+if out_of_limit:
+    print("你輸了")
+else:
+    print("猜對了")
